@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// from the book Java: How to Program by Harvey Deitel 
 public class Exercise_2 {
 	public static void main(String[] args) {
 
