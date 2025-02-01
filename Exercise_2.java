@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-// Java : How to Program by Harney Dietel
-
 public class Exercise_2 {
 	public static void main(String[] args) {
 
