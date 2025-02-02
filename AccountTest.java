@@ -3,11 +3,13 @@ import java.util.Scanner;
 public class AccountTest {
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
-		Account myAccount = new Account();
 
-		System.out.println("Initial account name: "+myAccount.getName());
+		//Account myAccount = new Account();		// use of default constructor 
+
 		System.out.print("Enter name: ");
-		myAccount.setName(input.nextLine());
+		Account myAccount = new Account(input.nextLine()); // use of parameterized constructor
+
+		//myAccount.setName(input.nextLine());
 
 		System.out.println("Account name: "+ myAccount.getName());
 
