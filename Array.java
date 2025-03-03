@@ -14,6 +14,18 @@ public class Array {
 		for (int i = 0; i < arr2.length; i++) {
 			System.out.printf("%8d%8d%n", i, arr2[i]);
 		}
+
+		// catching exceptions
+		System.out.println("\n\nArray Exception Handling using try and catch");
+		int[] arr3 = new int[3];
+		for (int i = 0; i <= arr3.length; i++) {
+			try {
+				System.out.println(arr3[i]);
+			} catch (ArrayIndexOutOfBoundsException e) {
+				System.out.println(e);
+			}
+		}
+		System.out.println("reached program end");
 	}
 
 }
