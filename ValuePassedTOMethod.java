@@ -4,13 +4,13 @@ public class ValuePassedToMethod {
 		for (int i = 0; i < 3; i++) {
 			arr[i] = new A(i);
 		}
-System.out.println("Before any changes: ");
-for (A num : arr) {
-	System.out.println(num);
-}
+		System.out.println("Before any changes: ");
+		for (A num : arr) {
+			System.out.println(num);
+		}
 
-fun(arr);
-System.out.println("After changes: ");
+		fun(arr);
+		System.out.println("After changes: ");
 		for (A num : arr) {
 			System.out.println(num);
 		}
@@ -35,9 +35,8 @@ System.out.println("After changes: ");
 class A {
 	int a = 0;
 
-	public A(int i)
-	{
-		a =i;
+	public A(int i) {
+		a = i;
 	}
 
 	@Override
